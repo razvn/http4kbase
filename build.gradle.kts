@@ -12,7 +12,7 @@ repositories {
 }
 
 
-val http4kVersion = "3.265.0"
+val http4kVersion = "3.269.0"
 val kotlinVersion = "1.4.10"
 val junitVersion = "5.7.0"
 

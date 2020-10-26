@@ -2,8 +2,8 @@
 
 Base start for a http4k project.
 
-- Gradle: 6.6.1 Kotlin DSL
-- http4k: 3.265.0
+- Gradle: 6.7 Kotlin DSL
+- http4k: 3.269.0
     - ApacheServer
     - OkHttp
 - Java 11 build
@@ -13,4 +13,3 @@ Base start for a http4k project.
 ```
 ./gradlew shadowJar
 ```
-
