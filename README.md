@@ -3,7 +3,7 @@
 Base start for a http4k project.
 
 - Gradle: 6.7 Kotlin DSL
-- http4k: 3.269.0
+- http4k: 3.275.0
     - ApacheServer
     - OkHttp
 - Java 11 build
