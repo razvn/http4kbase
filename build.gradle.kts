@@ -12,20 +12,23 @@ repositories {
 }
 
 
-val http4kVersion = "3.265.0"
+val http4kVersion = "3.275.0"
 val kotlinVersion = "1.4.10"
 val junitVersion = "5.7.0"
 
 dependencies {
-    implementation("org.http4k:http4k-client-okhttp:$http4kVersion")
-    implementation("org.http4k:http4k-core:$http4kVersion")
-    implementation("org.http4k:http4k-server-apache:$http4kVersion")
+    implementation(platform("org.http4k:http4k-bom:$http4kVersion"))
+    implementation("org.http4k:http4k-core")
+    implementation("org.http4k:http4k-client-okhttp")
+    implementation("org.http4k:http4k-server-apache")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
-    testImplementation("org.http4k:http4k-testing-approval:$http4kVersion")
-    testImplementation("org.http4k:http4k-testing-hamkrest:$http4kVersion")
-    testImplementation("org.http4k:http4k-testing-kotest:$http4kVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+
+    testImplementation("org.http4k:http4k-testing-approval")
+    testImplementation("org.http4k:http4k-testing-hamkrest")
+    testImplementation("org.http4k:http4k-testing-kotest")
+
+    testImplementation(platform("org.junit:junit-bom:$junitVersion"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_11
