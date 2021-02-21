@@ -18,7 +18,8 @@ dependencies {
     implementation(platform("org.http4k:http4k-bom:$http4kVersion"))
     implementation("org.http4k:http4k-core")
     implementation("org.http4k:http4k-client-okhttp")
-    implementation("org.http4k:http4k-server-apache")
+    implementation("org.http4k:http4k-server-undertow")
+    implementation("org.http4k:http4k-client-websocket")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
 
     testImplementation("org.http4k:http4k-testing-approval")
