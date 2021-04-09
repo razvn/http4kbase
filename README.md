@@ -2,12 +2,12 @@
 
 Base start for a http4k project.
 
-- Gradle: 6.7 Kotlin DSL
-- http4k: 3.275.0
+- Gradle: Kotlin DSL
+- http4k: 
     - ApacheServer
     - OkHttp
 - Java 11 build
-- Junit: 5.7.0 
+- Junit 
 
 ## Package
 ```
