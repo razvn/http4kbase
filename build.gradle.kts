@@ -10,7 +10,7 @@ repositories {
     mavenCentral()
 }
 
-val http4kVersion = "4.6.0.0"
+val http4kVersion = "4.7.0.2"
 val kotlinVersion = "1.4.32"
 val junitVersion = "5.7.1"
 
