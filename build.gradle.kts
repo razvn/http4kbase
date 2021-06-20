@@ -2,17 +2,17 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.4.32"
-    id("com.github.johnrengelman.shadow") version "6.1.0"
+    kotlin("jvm") version "1.5.10"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 repositories {
     mavenCentral()
 }
 
-val http4kVersion = "4.7.0.2"
-val kotlinVersion = "1.4.32"
-val junitVersion = "5.7.1"
+val http4kVersion = "4.9.8.0"
+val kotlinVersion = "1.5.10"
+val junitVersion = "5.7.2"
 
 dependencies {
     implementation(platform("org.http4k:http4k-bom:$http4kVersion"))
